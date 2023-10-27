@@ -1,21 +1,23 @@
 package com.backend.parcial.model;
 
-public class Odontologo {
+import java.util.List;
+
+public class Odontologos  {
     private int id;
-    private int Numerodematricula;
+    private int Numeromatricula;
     private String Nombre;
 
     private String apellido;
 
-    public Odontologo(int numerodematricula, String nombre, String apellido) {
-        Numerodematricula = numerodematricula;
+    public Odontologos(int numerodematricula, String nombre, String apellido) {
+        Numeromatricula = numerodematricula;
         Nombre = nombre;
         this.apellido = apellido;
     }
 
-    public Odontologo(int id, int numerodematricula, String nombre, String apellido) {
+    public Odontologos(int id, int numerodematricula, String nombre, String apellido) {
         this.id = id;
-        Numerodematricula = numerodematricula;
+        Numeromatricula = numerodematricula;
         Nombre = nombre;
         this.apellido = apellido;
     }
@@ -29,11 +31,11 @@ public class Odontologo {
     }
 
     public int getNumerodematricula() {
-        return Numerodematricula;
+        return Numeromatricula;
     }
 
     public void setNumerodematricula(int numerodematricula) {
-        Numerodematricula = numerodematricula;
+        Numeromatricula = numerodematricula;
     }
 
     public String getNombre() {
@@ -56,7 +58,7 @@ public class Odontologo {
     public String toString() {
         return "Odontologo{" +
                 "id=" + id +
-                ", Numerodematricula=" + Numerodematricula +
+                ", Numerodematricula=" + Numeromatricula +
                 ", Nombre='" + Nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 '}';
